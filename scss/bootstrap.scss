@@ -1,0 +1,59 @@
+// Font
+$font-family-sans-serif: "Open Sans", sans-serif;
+
+//Color
+$primary: #931158;
+$secondary: #f0f0f0;
+
+// Navbar
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #fff;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,%3Csvg width='54' height='37' viewBox='0 0 54 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 3.6842H35.5484' stroke='%23931158' stroke-width='2.74186' stroke-linecap='round'/%3E%3Cpath d='M2 20.2632H35.5484' stroke='%23931158' stroke-width='2.74186' stroke-linecap='round'/%3E%3Cpath d='M2 35H35.5484' stroke='%23931158' stroke-width='2.74186' stroke-linecap='round'/%3E%3C/svg%3E");
+$navbar-toggler-font-size: 2.25rem;
+$bs-nav-link-hover-color: $primary;
+
+.nav-link:active {
+  color: $bs-nav-link-hover-color;
+}
+// Buttons
+$button-radius: 4px;
+$button-padding-x: 30px;
+$button-padding-y: 10px;
+
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-padding-x: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+$btn-padding-x-lg: $button-padding-x;
+$btn-padding-y: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-y-lg: $button-padding-y;
+$navbar-toggler-border-radius: 5px;
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+  9: $spacer * 16,
+) !default;
+
+$line-height-base: 1.7;
+$headings-margin-bottom: $spacer * 1;
+
+$enable-negative-margins: true;
+
+::selection {
+  background-color: $primary;
+  color: #fff;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

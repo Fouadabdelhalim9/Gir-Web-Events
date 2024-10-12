@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>plan your dream event</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid border-bottom">
+      <div class="row align-items-center">
+        <nav class="navbar navbar-expand-lg col-md-12 col-lg-6">
+          <button
+            class="navbar-toggler border-0 ms-auto"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center text-lg-start"
+            id="navbarNav"
+          >
+            <a href="#" class="navbar-brand ps-5">
+              <img src="imgs/logo.svg" alt="brand logo"
+            /></a>
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item active px-4 text-nowrap">
+                <a class="nav-link home__main" href="#home">Home</a>
+              </li>
+              <li class="nav-item px-4 text-nowrap">
+                <a class="nav-link" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item px-4 text-nowrap">
+                <a class="nav-link" href="#bestshops">Best shops</a>
+              </li>
+              <li class="nav-item px-4 text-nowrap">
+                <a class="nav-link" href="#vip">Vip</a>
+              </li>
+              <li class="nav-item px-4 text-nowrap">
+                <a class="nav-link" href="#providers">Providers</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="col-md-12 col-lg-4 ms-lg-auto text-center text-lg-start">
+          <a
+            href="#contactus"
+            class="text-decoration-none text-black text-opacity-75"
+          >
+            <img src="imgs/call-calling.svg" alt="contact us" />
+            <span>Contact Us</span>
+          </a>
+          <button class="btn btn-outline-primary border-0 py-1 px-2">
+            <img src="imgs/Bell_pin_light.svg" alt="bell pin light" />
+          </button>
+          <button class="btn btn-outline-primary border-0 py-1 px-2">
+            <img src="imgs/fav_icon.svg" alt="add to icon" />
+          </button>
+          <a href="#" class="fm-cairo btn btn-primary py-1 px-3 mx-3"
+            ><span><img src="imgs/loginico.svg" alt="login icon" /></span>
+            Login</a
+          >
+          <a
+            href="signupuser.html"
+            class="fm-cairo btn text-bg-light py-1 px-3"
+          >
+            <span><img src="imgs/signupico.svg" alt="sign up icon" /></span>
+            Sign Up</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-6 d-none d-lg-block">
+        <ul class="list-group d-flex flex-row ms-5">
+          <li class="list-group-item p-0 border-0">
+            <a href="#" class="btn px-2 py-3 text-black-50">weddings</a>
+          </li>
+          <li class="list-group-item p-0 border-0">
+            <a href="#" class="btn px-2 py-3 text-black-50"> Birthday</a>
+          </li>
+          <li class="list-group-item p-0 border-0">
+            <a href="#" class="btn px-2 py-3 text-black-50"> New Born</a>
+          </li>
+          <li class="list-group-item p-0 border-0">
+            <a href="#" class="btn px-2 py-3 text-black-50"> Baby Gender</a>
+          </li>
+
+          <li class="list-group-item p-0 border-0">
+            <a href="#" class="btn px-2 py-3 text-black-50">Engagment</a>
+          </li>
+          <li class="list-group-item p-0 border-0">
+            <a href="#" class="btn px-2 py-3 text-black-50">Coporate Events</a>
+          </li>
+          <li class="list-group-item p-0 border-0">
+            <a href="#" class="btn px-2 py-3 text-black-50">Gradution</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-5 col-sm-12">
+        <form class="form form__nav my-3 me-5">
+          <div class="input-group border ms-2 rounded rounded-5">
+            <input
+              type="text"
+              class="form-control border-end-0 rounded-start-5 p-2 form__nav--input"
+              placeholder="What is the event?"
+            />
+            <button class="btn filter p-2">
+              <img src="imgs/uil_filter.svg" alt="filter icon" />
+            </button>
+            <button class="btn search p-2">
+              <img src="imgs/searchico.svg" alt="search icon" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- writes your payment here -->
+    <section class="k-payment bg-main">
+      <div class="container mt-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item">
+              <a href="#">Individual providers</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Providers : sick rose company</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Pay to red package 1193</a>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Title -->
+        <h1 class="mb-5">Payment page</h1>
+        <!-- Row -->
+        <div class="row align-items-start">
+          <!-- Payment Methods -->
+          <div class="col-md-6 payment-methods">
+            <h2>Choose a payment method</h2>
+
+            <div class="btn-group payment-options" role="group">
+              <button type="button" class="btn" id="ewalletBtn">
+                E-wallet
+                <div class="icon-contain">
+                  <img
+                    src="/imgs/k-bitcoin-card.svg"
+                    alt="walet"
+                    loading="lazy"
+                  />
+                </div>
+              </button>
+              <button type="button" class="btn" id="bankTransferBtn">
+                Bank transfer
+                <div class="icon-contain">
+                  <img src="/imgs/k-bank.svg" alt="bank" loading="lazy" />
+                </div>
+              </button>
+              <button type="button" class="btn active" id="creditCardBtn">
+                Credit card
+                <div class="icon-contain">
+                  <img src="/imgs/k-card-tick.svg" alt="tick" loading="lazy" />
+                </div>
+              </button>
+            </div>
+
+            <!-- E-wallet Form -->
+            <div
+              class="e-wallet-section"
+              id="ewallet-form"
+              style="display: none"
+            >
+              <h2>Choose e-wallet</h2>
+              <div class="e-wallet-options">
+                <label>
+                  <img src="/imgs/k-applepay.png" alt="apple" loading="lazy" />
+                  <input type="radio" name="e-wallet" value="apple-pay" />
+                </label>
+                <label>
+                  <img
+                    src="/imgs/k-googlepay.png"
+                    alt="google"
+                    loading="lazy"
+                  />
+                  <input type="radio" name="e-wallet" value="google-pay" />
+                </label>
+                <label>
+                  Other
+                  <input type="radio" name="e-wallet" value="other" />
+                </label>
+              </div>
+
+              <div class="phone-number">
+                <label for="phone">Phone number</label>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone number"
+                />
+              </div>
+            </div>
+
+            <!-- Bank Transfer Form -->
+            <div
+              class="payment-content"
+              id="bank-transfer-form"
+              style="display: none"
+            >
+              <div class="form-group mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Bank name"
+                />
+              </div>
+              <div class="form-group mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Account number"
+                />
+              </div>
+              <div class="form-group mb-4">
+                <input
+                  type="text"
+                  class="form-control full-width"
+                  placeholder="IBAN"
+                />
+              </div>
+              <div class="form-group mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Street, neighborhood, country"
+                />
+              </div>
+              <div class="form-group mb-4 row">
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="ZIP" />
+                </div>
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Country"
+                  />
+                </div>
+              </div>
+              <a href="#" class="bank-link c-primary">
+                <img src="/imgs/k-banklink.svg" alt="blunk" loading="lazy" />
+                Instructions for completing a bank transfer
+              </a>
+            </div>
+
+            <!-- Credit Card Form (Default) -->
+            <div class="payment-content mt-4" id="credit-card-form">
+              <div class="form-group mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name on the card"
+                />
+              </div>
+              <div class="form-group mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Card number"
+                />
+              </div>
+              <div class="form-group row mb-4">
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="CVV code"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Expiration date"
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Street, neighborhood, country"
+                />
+              </div>
+              <div class="form-group row mb-4">
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="ZIP" />
+                </div>
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Country"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Pay Button -->
+            <a
+              type="button"
+              href="orderRecord.html"
+              class="btn btn-primary mt-4"
+              >Pay now</a
+            >
+          </div>
+
+          <!-- Payment Method Images -->
+          <div class="payment-images col-md-6">
+            <!-- Image for Credit Card -->
+            <img
+              id="creditCardImage1"
+              src="/imgs/k-cards.png"
+              class="img-fluid"
+              alt="Credit Card Front"
+              style="display: block"
+            />
+            <img
+              id="creditCardImage2"
+              src="/imgs/k-accountcard.png"
+              class="img-fluid"
+              alt="Credit Card Back"
+              style="display: block"
+            />
+
+            <!-- Default Image (For other methods) -->
+            <img
+              id="paymentImage"
+              src="default-payment.jpg"
+              class="img-fluid"
+              alt="Payment Image"
+              style="display: none"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Elicips -->
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>
+            Gir <img style="width: 30%" src="./imgs/Vectorgir.png" alt="" />
+            <br />
+            Events
+          </h2>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Legal Information</h4>
+            <ul>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Navigation Links</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>For Provider</h4>
+            <ul>
+              <li><a href="#">Join now</a></li>
+              <li><a href="#">Sign in</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Wedding Ideas</h4>
+            <ul>
+              <li><a href="#">Summer Weddings</a></li>
+              <li><a href="#">Real Weddings</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Birthday Ideas</h4>
+            <ul>
+              <li><a href="#">Summer Birthdays</a></li>
+              <li><a href="#">Real Birthdays</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#"
+            ><img src="./imgs/Group 1000004623.png" alt="Facebook"
+          /></a>
+        </div>
+        <div class="footer-apps">
+          <h4>Get the app</h4>
+          <a href="#"
+            ><img
+              src="./imgs/app-store.24ce31e7a13056d542d1.png"
+              alt="App Store"
+          /></a>
+          <a href="#"
+            ><img
+              src="./imgs/googleApp.8f241223f55c067c2fb6.png"
+              alt="Google Play"
+          /></a>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="footer-bottom">
+          <p>Company, 2024.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/payment.js"></script>
+  </body>
+</html>
