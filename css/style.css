@@ -166,7 +166,7 @@ body {
   height: 33px;
   border-radius: 30rem;
   background-color: #931158;
-  left: 0;
+  left: -10%;
   top: -20%;
   z-index: 3;
 }
@@ -188,9 +188,9 @@ body {
 }
 
 .circle {
-  content: attr(data-value);
   position: absolute;
-  top: -6px; /* Adjust to move it above */
+  top: -90%;
+  z-index: 0;
   width: 33px;
   height: 33px;
   background: #931158;
@@ -200,7 +200,10 @@ body {
   justify-content: center;
   align-items: center;
   transform: translateX(0); /* Will be dynamically updated */
-  transition: transform 0.2s ease;
+}
+
+input[type=radio]:checked {
+  background-color: black;
 }
 
 .my-slider-progress {
@@ -1366,4 +1369,50 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+
+
+
+
+
+
+
+
+
+.filtercontainer{
+height: 684px;
+}
+.btn-filter{
+  width: 124px;
+height: 35px;
+border-radius: 10px;
+background: #931158;
+color: white;
+margin-bottom: 10px;
+
+}
+form ul li{
+  max-width: 550px !important;
+  height: 450px !important;
+}
+
+.describeAI input{
+  width: 516px;
+height: 53px;
+border-radius: 9px;
+font-family: Cabin;
+font-size: 13px;
+font-weight: 400;
+line-height: 15.8px;
+text-align: left;
+background: #EFEFEF;
+
+
+
+}
+.NavigationButtons{
+position: absolute;
+bottom: 10%;
+left:65%;
 }
