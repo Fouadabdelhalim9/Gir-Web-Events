@@ -84,6 +84,7 @@ try {
 
   var splidePro = new Splide(".progress", {
     pagination: false,
+    drag: false, // Disable drag
   });
   var bar = splidePro.root.querySelector(".my-slider-progress-bar");
 
@@ -162,59 +163,38 @@ try {
 
   //////////////////////////////////////////
   ///// progress budget and guests
-  const rangeInput = document.getElementById("range");
-  const circle = document.getElementById("circle");
+  const rangeInputs = document.querySelectorAll(".form-range");
+
+  // const circle = document.getElementById("circle");
 
   // Function to update the position of the circle element
-  function updateCirclePosition() {
-    const rangeValue = rangeInput.value;
-    const max = rangeInput.max;
-    const min = rangeInput.min;
+  function updateCirclePosition(e) {
+    console.log("the range changed");
+    const rangeWrapper = e.target.closest(".range-wrapper");
+
+    const circle = rangeWrapper.querySelector(".circle");
+
+    const rangeValue = e.target.value;
+    const max = e.target.max;
+    const min = e.target.min;
 
     // Calculate the percentage of the current value relative to the max/min range
     const percentage = ((rangeValue - min) / (max - min)) * 100;
 
     // Update the content of the circle
-    circle.textContent = rangeValue;
+    //circle.textContent = rangeValue;
 
     // Move the circle element above the thumb
-    const thumbOffset = (rangeInput.offsetWidth * percentage) / 100 - 15; // Center the circle
+    const thumbOffset = ((e.target.offsetWidth - 20) * percentage) / 100; // Center the circle
     circle.style.transform = `translateX(${thumbOffset}px)`;
   }
+  rangeInputs?.forEach((rangeInput) => {
+    // Update position on input change
+    rangeInput?.addEventListener("input", updateCirclePosition);
 
-  // Update position on input change
-  rangeInput?.addEventListener("change", updateCirclePosition);
-
-  // Initial update when page loads
-  updateCirclePosition();
-
-  /////////////////////////////////////////
-  ///// progress budget and guests
-  const rangeInputTwo = document.querySelector(".range--2");
-  const circleTwo = document.querySelector(".circle--2");
-
-  // Function to update the position of the circleTwo element
-  function updatecircleTwoPosition() {
-    const rangeValue = rangeInputTwo.value;
-    const max = rangeInputTwo.max;
-    const min = rangeInputTwo.min;
-
-    // Calculate the percentage of the current value relative to the max/min range
-    const percentage = ((rangeValue - min) / (max - min)) * 100;
-
-    // Update the content of the circleTwo
-    circleTwo.textContent = rangeValue + "$";
-
-    // Move the circleTwo element above the thumb
-    const thumbOffset = (rangeInputTwo.offsetWidth * percentage) / 100 - 15; // Center the circleTwo
-    circleTwo.style.transform = `translateX(${thumbOffset}px)`;
-  }
-
-  // Update position on input change
-  rangeInputTwo?.addEventListener("change", updatecircleTwoPosition);
-
-  // Initial update when page loads
-  updatecircleTwoPosition();
+    // Initial update when page loads
+    // updateCirclePosition(rangeInput);
+  });
 
   ////////////////////////////////////////
   //////// Conditionally show the main and search results and search empty
@@ -317,7 +297,7 @@ try {
   ////////////////////////////////////////
   //// filters toggle
   const filterBtn = document.querySelectorAll(".filter__btn");
-  console.log(filterBtn);
+
   const filters = document.querySelectorAll(".filters");
 
   filterBtn?.forEach((btn) => {
@@ -371,3 +351,67 @@ select?.addEventListener("change", function (e) {
 
 //////////////////////////////////////////
 /// // payment page
+
+
+
+
+
+
+
+
+
+
+
+// fouad 
+document.addEventListener('DOMContentLoaded', function () {
+  const steps = document.querySelectorAll('.step');
+  let currentStep = 0;
+
+  // Function to show/hide steps
+  function showStep(stepIndex) {
+    steps.forEach((step, index) => {
+      step.style.display = (index === stepIndex) ? 'block' : 'none';
+    });
+
+    // Hide/Show navigation buttons
+    if (stepIndex === 0) {
+      document.getElementById('prev-btn').style.display = 'none';
+    } else {
+      document.getElementById('prev-btn').style.display = 'inline-block';
+    }
+
+    if (stepIndex === steps.length - 1) {
+      document.getElementById('next-btn').style.display = 'none';
+      document.getElementById('submit-btn').style.display = 'inline-block';
+    } else {
+      document.getElementById('next-btn').style.display = 'inline-block';
+      document.getElementById('submit-btn').style.display = 'none';
+    }
+  }
+
+  // Show the first step initially
+  showStep(currentStep);
+
+  // Handle Next button click
+  document.getElementById('next-btn').addEventListener('click', function () {
+    if (currentStep < steps.length - 1) {
+      currentStep++;
+      showStep(currentStep);
+    }
+  });
+
+  // Handle Previous button click
+  document.getElementById('prev-btn').addEventListener('click', function () {
+    if (currentStep > 0) {
+      currentStep--;
+      showStep(currentStep);
+    }
+  });
+
+  // Handle Form submission
+  document.getElementById('stepper-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Form Submitted Successfully!');
+    // Handle form data here (e.g., AJAX request to server)
+  });
+});
