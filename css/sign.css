@@ -1,0 +1,156 @@
+
+body{
+    width: 100% !important;
+    height: 1100px;
+}
+.logo {
+    width: 138px;
+    height: 119px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .container h2 {
+    font-size: 40px;
+    color: #931158;
+  }
+  p {
+    font-size: 20px;
+    color: #585858;
+  }
+  #togglePassword {
+    position: absolute;
+    top: -5px;
+    right: -15px;
+  }
+  #toggleRePassword {
+    position: absolute;
+    top: -5px;
+    right: -15px;
+  }
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  .success {
+    color: green;
+    font-size: 0.9em;
+  }
+
+.input-container {
+position: relative;
+margin-top: 20px;
+}
+
+input {
+width: 100%;
+padding: 8px;
+font-size: 16px;
+}
+
+label {
+position: absolute;
+top: 7px;
+left: 30px;
+color: #aaa;
+font-size: 16px;
+transition: 0.3s ease all;
+pointer-events: none; /* Prevents label from being clicked */
+}
+
+/* Hide placeholder on focus */
+input:focus::placeholder {
+color: transparent;
+color: #333;
+}
+
+/* Move label up on focus or when input has content */
+input:focus + label,
+input:not(:placeholder-shown) + label {
+top: -25px;
+left: 20px;
+font-size: 15px;
+opacity: 1;
+}
+.containerPhone input:focus +.containerPhone label,
+.containerPhone input:not(:placeholder-shown) +.containerPhone label {
+top: -25px;
+left: 150px;
+font-size: 15px;
+opacity: 1;
+}
+.d-none input:focus +.d-none label,
+.d-none input:not(:placeholder-shown) +.d-none label {
+top: -25px;
+left: 150px;
+font-size: 15px;
+opacity: 1;
+}
+select{
+    color: #6B6B6B
+}
+select option{
+    color: #6B6B6B
+}
+.companyInputs{
+    right: 100;
+    bottom:100;
+    background: #000;
+}
+.submit{
+    width: 150px;
+    height: 40px;
+    background: #931158;
+    position: absolute;
+   right: 0;
+   border: 0;
+   color: white;
+   border-radius: 6px;
+   margin: 10px ;
+}
+.listIcon{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+@media (max-width:450px) {
+    body{
+        width: 100%;
+    }
+    .register-img{
+        display: none !important;
+    }
+    .logo{
+        width: 80px;
+    }
+    .container{
+        width: 400px;
+    }
+    .container h2{
+        font-size:20px;
+    }
+    .container p{
+        width: 450px;
+        font-size:16px;
+        display: inline;
+    }
+    .register-form{
+        width: 380px !important;
+        }
+    .register-form form input{
+        width: 100%;
+    }
+}
+@media(min-width:450px) and (max-width:750px) {
+    body{
+      width: 100%;
+
+    }
+    .register-img{
+        display: none !important;
+    }
+    .container{
+        width: 600px;
+        margin: auto;
+    }
+}
