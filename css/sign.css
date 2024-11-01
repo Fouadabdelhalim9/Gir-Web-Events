@@ -18,8 +18,8 @@ body{
     font-size: 20px;
     color: #585858;
   }
-.register-img{
-    height:100vh;
+.register-img img{
+    height:115vh !important;
 }
   #togglePassword {
     position: absolute;
