@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cairo:wght@200..1000&display=swap");
+body {
+  width: 100% !important;
+  font-family: cabin, sans-serif;
+  font-weight: 500 !important;
+  overflow-x: hidden !important;
+}
+
+.navbar-nav .nav-link {
+  color: black !important;
+}
+
+.navbar-nav .nav-item:not(:last-child) {
+  border-right: 2px solid #bfbfbf;
+}
+
+@media only screen and (max-width: 62em) {
+  .navbar-nav .nav-item:not(:last-child) {
+    border-right: none;
+  }
+}
+.fm-cairo {
+  font-family: cairo, sans-serif;
+}
+/*---------------------------------------- */
+
+.backgroundService {
+  background-image: url(../imgs/Rectangle\ 3463298.png);
+  width: 100%;
+  height: 266px;
+  position: relative;
+}
+
+.backgroundImg {
+  position: absolute;
+  width: 89px;
+  height: 88px !;
+  top: 58px;
+  left: 172px;
+  gap: 0px;
+  opacity: 0px;
+}
+.hypernav {
+  position: absolute;
+  top: 25px;
+  left: 250px;
+}
+.hypernav a {
+  color: white;
+  margin-left: 10px;
+  width: 84px;
+  height: 12px;
+  font-family: Barlow;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+}
+.companyname {
+  position: absolute;
+  top: 60px;
+  left: 280px;
+}
+.companyname h1 {
+  color: white;
+  font-family: Chau Philomene One;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+.companyname span img {
+  width: 28px;
+  height: 26px;
+}
+@media only screen and (max-width: 600px) {
+  .hypernav {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+  .companyname {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+  }
+}
+/* hayperlinks */
+ .hayperlinks{
+  flex-wrap: wrap;
+  margin: 20px auto;
+ }
+ .hayperlinks a{
+  width: 121px;
+  height: 36px;
+  text-decoration: none;
+  border-radius: 17px;
+  text-align: center;
+  font-family: Cairo;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+color: #5C5C5C;
+padding-top: 6px;
+ }
+ .hayperlinks .active{
+  background: #931158 !important;
+  color: white;
+  font-family: Cairo;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+ }
+
+/* ---------------------------------------- */
+.about-contant {
+  margin-top: 50px;
+  font-family: Cabin;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  padding: 10px;
+
+}
+@media only screen and (max-width: 450px) {
+  .about-contant{
+    flex-direction: column;
+  }
+  .about-contant h2{
+    width: 100%;
+    font-size: 23px;
+  }
+  .about-contant .icons{
+    width: 100%;
+  }
+  .about-contant .icons img{
+    width:20px;
+  }
+}
+@media(min-width: 450px) and (max-width: 950px) {
+.about-contant{
+  flex-direction: column;
+}
+.about-contant h2{
+  width: 100%;
+  font-size: 23px;
+}
+.about-contant .icons{
+  width: 100%;
+}
+.about-contant .icons img{
+  width:30px;
+}
+
+}
+
+/* par */
+.description p{
+  width: 609px;
+  font-family: Cairo;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+}
+@media only screen and (max-width: 450px) {
+  .description p {
+    width: 300px;
+    margin: 10px;
+    left: 20px;
+    font-size: 18px;
+  }
+}
+@media(min-width: 450px) and (max-width: 900px) {
+  .description p {
+    width:90%;
+    margin: 10px;
+    left: 20px;
+    font-size: 18px;
+  }
+}
+
+
+/* info */
+table{
+  width:762px ;
+  height:375px ;
+  font-size: 22px;
+}
+.table-info{
+    color: #4A4A4A;
+}
+@media only screen and (max-width: 450px) {
+  table{
+    width:100% ;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+}
+@media(min-width: 450px) and (max-width: 850px) {
+  table{
+    width:100% ;
+    font-size: 18px;
+    margin-top: 25px;
+  }
+}
+
+/* Misson */
+.containerMission {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-top: 25px;
+}
+.containerMission h2 {
+  width: 229px;
+  height: 20px;
+  font-family: Cairo;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.mission {
+  position: absolute;
+  left: 262px;
+  position: relative;
+}
+.mission div {
+  position: absolute;
+  left: 80px;
+}
+.mission div h2 {
+  font-family: Cairo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+.mission div p {
+  width: 461px;
+  height: 26px;
+  font-family: Cairo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 13px;
+  text-align: left;
+  color: #00000099;
+}
+.reviewtext {
+  margin: 5px;
+  position: relative;
+}
+.reviewtext span {
+  width: 279px;
+  height: 35px;
+  margin: 5px;
+}
+.reviewtext span img {
+  width: 35px;
+  height: 35px;
+  top: 1380px;
+  left: 380px;
+  gap: 0px;
+  opacity: 0px;
+}
+.reviewtext span p {
+  margin-left: 60px;
+  font-family: Cairo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #931158;
+}
+.reviewtext .reviewparagraph{
+  width: 474px;
+  height: 32px;
+  font-family: Cairo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #00000099;
+
+}
+.arrowformore a {
+  width: 59px;
+  height: 20px;
+  font-family: Cairo;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: #717171;
+}
+.arrowformore {
+  text-align: right;
+position: absolute;
+right: 5%;
+top: 95%;
+}
+
+@media (max-width: 600px) {
+  .containerMission h2 {
+    width: auto;
+    height: 20px;
+    font-family: Cairo;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .mission {
+    margin-top: 100px;
+    left: 5px;
+  }
+  .mission div {
+    position: absolute;
+    left: 80px;
+  }
+  .mission div h2 {
+    font-family: Cairo;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+  }
+  .mission div p {
+    width: auto;
+    height: 26px;
+    font-family: Cairo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: left;
+  }
+}
+@media(min-width: 600px) and (max-width:1200px) {
+  .containerMission h2 {
+    width: auto;
+    height: 20px;
+    font-family: Cairo;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .mission {
+    margin-top: 100px;
+    left: 5px;
+  }
+  .mission div {
+    position: absolute;
+    left: 80px;
+  }
+  .mission div h2 {
+    font-family: Cairo;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+  }
+  .mission div p {
+    width: auto;
+    height: 26px;
+    font-family: Cairo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: left;
+  }
+}
+
+/* Misson */
+
+/* ----------------------------------- */
+/* footer */
+footer {
+  background-color: #8a004f;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo h2 {
+  font-size: 44px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  min-width: 150px;
+  margin: 0px 20px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-apps a {
+  margin: 0 10px;
+}
+
+.footer-apps img {
+  width: 120px;
+  height: 40px;
+}
+
+.footer-bottom p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 0px;
+  }
+}
+.pallon1{
+position: absolute;
+width: 207.19px;
+height: 214.29px;
+top: 854px;
+left: 1177.76px;
+gap: 0px;
+opacity: 0.34px;
+}
+.pallon2{
+  position: absolute;
+  width: 124.51px;
+  height: 127.44px;
+  top: 844px;
+  left: 1091.24px;
+  gap: 0px;
+  opacity: 0.34px;
+
+  
+}
+@media only screen and (max-width: 900px) {
+.pallon1{
+  display: none;
+}
+.pallon2{
+  display: none;
+}
+}
+
